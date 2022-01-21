@@ -1,0 +1,74 @@
+<style>
+    .coupon-copy {
+        display: flex;
+        max-width: 400px;
+    }
+
+    .coupon-copy input {
+        width: 65%;
+        text-align: center;
+        height: 60px;
+        font-size: 29px;
+        font-weight: 900;
+        color: #1d307d;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .coupon-copy button {
+        width: 35%;
+        height: 61px;
+        line-height: 0;
+        display: initial;
+        border: transparent;
+        font-size: 24px;
+        font-weight: bold;
+        background: #ef4461;
+        border-radius: 0 8px 8px 0;
+    }
+
+    p#demo {
+        color: #ff9800;
+        margin-top: 13px;
+        font-weight: 500;
+        font-size: 17px;
+    }
+</style>
+
+
+<div class="coupon-copy">
+    <input id="fTest" type="text" value="OESG">
+    <button onclick="myFunction()" id="btnTest">Copy</button>
+</div>
+<p id="demo"></p>
+
+
+
+
+
+
+<script type="text/javascript">
+    const fTest = document.getElementById("fTest");
+    const btnTest = document.getElementById("btnTest");
+    
+    btnTest.onclick = function() {
+    
+    fTest.select();
+    document.execCommand("Copy");
+    document.getElementById("demo").innerHTML = "Congratulation You Have Copied This Coupon..! ";
+    
+    };
+      
+          
+</script>
+<script type="text/javascript">
+    const fTest = document.getElementById("fTest");
+    const btnTest = document.getElementById("btnTest");
+    
+    btnTest.onclick = function() {
+    
+    fTest.select();
+    document.execCommand("Copy");
+    document.getElementById("demo").innerHTML = "Congratulation You Have Copied This Coupon..! ";
+    
+    };
+</script>
